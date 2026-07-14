@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wb_style/stylesheet_reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Registration_Form</title>
+</head>
+
+<body>
+    <!-- ===== HERO SECTION ===== -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <!-- Logo -->
+            <img src="wb_images/logo.png" alt="UET Logo" class="logo">
+            
+            <!-- Navigation -->
+            <nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="Department.html">DEPARTMENT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hero Title -->
+            <div class="hero-content">
+                <h1>Registration Form</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== REGISTRATION FORM ===== -->
+    <div class="registration-container">
+        <h1 style="color: #c18c31; font-size: clamp(28px, 4vw, 50px); text-align: center;">University Registration Form</h1>
+        
+        <form action="#" method="post">
+            <div class="main-form">
+
+                <!-- Left Side -->
+                <div class="form-left">
+
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="nation">Nationality:</label>
+                        <input type="text" id="nation" name="nationality" required>
+
+                        <label for="religion">Religion:</label>
+                        <input type="text" id="religion" name="religion" required>
+                        
+                        <label for="cnic">CNIC/B-Form:</label>
+                        <input type="text" id="cnic" name="cnic" required>
+
+                        <label for="domicile">Domicile:</label>
+                        <input type="text" id="domicile" name="domicile" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="address">Permanent Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </fieldset>
+
+                    <!-- Academic Information -->
+                    <fieldset>
+                        <legend>Academic Information</legend>
+
+                        <label class="section-title">10th Grade</label>
+                        
+                        <label for="school">School Name:</label>
+                        <input type="text" id="school" name="school" required>
+                        
+                        <label for="tmarks10">Total Marks:</label>
+                        <input type="text" id="tmarks10" name="tmarks10" required>
+                        
+                        <label for="omarks10">Obtained Marks:</label>
+                        <input type="text" id="omarks10" name="omarks10" required>
+                        
+                        <label for="board10">Board Name:</label>
+                        <input type="text" id="board10" name="board10" required>
+                        
+                        <label for="yop10">Year Of Passing:</label>
+                        <input type="text" id="yop10" name="yop10" required>
+
+                        <label class="section-title">12th Grade</label>
+                        
+                        <label for="college">College Name:</label>
+                        <input type="text" id="college" name="college" required>
+                        
+                        <label for="tmarks12">Total Marks:</label>
+                        <input type="text" id="tmarks12" name="tmarks12" required>
+                        
+                        <label for="omarks12">Obtained Marks:</label>
+                        <input type="text" id="omarks12" name="omarks12" required>
+                        
+                        <label for="board12">Board Name:</label>
+                        <input type="text" id="board12" name="board12" required>
+                        
+                        <label for="yop12">Year Of Passing:</label>
+                        <input type="text" id="yop12" name="yop12" required>
+
+                        <label class="section-title">Entry Test</label>
+                        
+                        <label for="tmarksEntry">Total Marks:</label>
+                        <input type="text" id="tmarksEntry" name="tmarksEntry" required>
+                        
+                        <label for="omarksEntry">Obtained Marks:</label>
+                        <input type="text" id="omarksEntry" name="omarksEntry" required>
+
+                        <label class="section-title">Course Applied For</label>
+                        <select id="subjects" name="course" required>
+                            <option value="">Select</option>
+                            <option value="bsc">BS Computer Science</option>
+                            <option value="bcom">BS Electrical Engineering</option>
+                            <option value="ba">BS Mechanical Engineering</option>
+                            <option value="ba">BS Civil Engineering</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Parent Information -->
+                    <fieldset>
+                        <legend>Parent Information</legend>
+                        
+                        <label for="father-name">Father's Name:</label>
+                        <input type="text" id="father-name" name="father_name" required>
+
+                        <label for="father-cnic">Father CNIC Number:</label>
+                        <input type="text" id="father-cnic" name="father_cnic" required>
+
+                        <label for="mother-name">Mother's Name:</label>
+                        <input type="text" id="mother-name" name="mother_name" required>
+
+                        <label for="mother-cnic">Mother CNIC Number:</label>
+                        <input type="text" id="mother-cnic" name="mother_cnic" required>
+
+                        <label for="parent-phone">Parent's Contact Number:</label>
+                        <input type="tel" id="parent-phone" name="parent_phone" required>
+
+                        <label for="income">Monthly Income:</label>
+                        <input type="text" id="income" name="income" required>
+                    </fieldset>
+                </div>
+
+                <!-- Right Side - Image Upload -->
+                <div class="form-right">
+                    <fieldset>
+                        <legend>Upload Picture</legend>
+                        <label for="profile-pic">Choose Image:</label>
+                        <input type="file" id="profile-pic" name="profile_pic" required>
+                        <div class="image-preview">
+                            <p>No image chosen yet</p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="form-actions">
+                <button type="submit" class="btn-register">Register</button>
+                <button type="reset" class="btn-reset">Reset</button>
+                <a href="Department.html" class="btn-back">Go Back</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>About Us</h3>
+            <p>Should Try to Experience our University and Experienced a Skillful Life</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/uet_lahore_official/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/UETLahore.official/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 University of Engineering. All rights reserved.</p>
+            <a href="registration-form.html" class="back-to-top">Go To Top</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('navMenu').classList.toggle('active');
+});
+
+// Mobile Dropdown Toggle
+document.querySelectorAll('.dropdown .dropbtn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('active');
+        }
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+    const navMenu = document.getElementById('navMenu');
+    const menuToggle = document.getElementById('menuToggle');
+    
+    if (window.innerWidth <= 768) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            document.querySelectorAll('.dropdown.active').forEach(function(dropdown) {
+                dropdown.classList.remove('active');
+            });
+        }
+    }
+});
+
+// Close menu when scrolling
+window.addEventListener('scroll', function() {
+    if (window.innerWidth <= 768) {
+        document.getElementById('navMenu').classList.remove('active');
+        document.querySelectorAll('.dropdown.active').forEach(function(dropdown) {
+            dropdown.classList.remove('active');
+        });
+    }
+});
+
+// Close menu when resizing to desktop
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        document.getElementById('navMenu').classList.remove('active');
+        document.querySelectorAll('.dropdown.active').forEach(function(dropdown) {
+            dropdown.classList.remove('active');
+        });
+    }
+});
+    </script>
+
+</body>
+</html>
